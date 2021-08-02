@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset=""UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flipkart</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Knewave&family=Shrikhand&family=Wallpoet&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Hammersmith+One&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/4699febf00.js" crossorigin="anonymous"></script>
+
+    <style>
+	*{margin:0;padding:0;font-family:arial;}
+
+	header{display:flex;flex-direction:column;color:white;position:fixed;width:100%;}
+
+	.header_div{display:flex;justify-content:space-around;align-items:center;width:100%;height:70px;background:#33f;}
+
+	.shopping{color:black;display:flex;justify-content:space-evenly;padding:10px;}
+	.list{border:none;background:none;cursor:pointer;padding:10px;font-family: 'Acme', sans-serif;
+					  		 font-family: 'Hammersmith One', sans-serif;}
+
+	.logo_part1{font-size:20px;font-family: 'Carter One', cursive;}
+	.logo_part2{font-family:arial;font-style:italic;font-size:10px;}
+	span{color:yellow;}
+
+	#search_box{width:600px;height:35px;}
+	::placeholder{font-size:15px;}
+
+	#login_button{background:white;border:none;color:#33f;font-style:bold;width:100px;height:30px;cursor:pointer;}
+
+	#more_btn,#cart_btn{border:none;background:#33f;color:white;font-size:18px;cursor:pointer;padding:10px;width:100px;height:40px;font-family: 'Mitr', sans-				serif;font-size:18px;}
+	#login_button:active{font-size:15px;}
+	#more_btn:active{font-size:15px;}
+	#cart_btn:active{font-size:15px;}
+	
+	.fas fa-thumbs-up fa-5x{height:2px;}
+
+	.container{display:flex;}
+	#item{box-shadow:0 0 1px;margin-top:125px;}
+	.img_box{width:300px;text-align:center;margin-top:40px;margin-bottom:20px;}
+	.img_box:hover{transform: scale(1.2);}
+
+	.product_details{line-height:1.5;padding-left:25px;}
+
+	.details{padding:20px;}
+	.saree_pic{height:300px;cursor:pointer;}
+	.saree_brand_name{color:gray;}
+	.assured_img{height:20px;}
+	
+	.current_price{color:black;}
+	.real_price{color:gray;text-decoration:line-through;}
+	.discount_price{color:green;}
+
+	.addtocart_btn{border:none;color:white;background:#f90;padding:10px;cursor:pointer;}
+	.addtocart_btn:active{font-size:15px;}
+
+	.addtocart_btn:hover{background:#f60;box-shadow:inset 0 0 5px;border-radius:5px;}
+	.cart{padding:20px;}
+
+
+	footer{background:#036;color:white;position:fixed;}
+    </style>
+
+    <script type="text/javascript">
+	function image(img) {
+    	var src = img.src;
+    	window.open(src);
+	}
+
+	const audio=new Audio();
+	audio.src="mixkit-mouse-click-close-1113.wav";
+
+	function change_page()
+	  {
+		if(document.getElementById().style.display==)
+	  }
+	
+    </script>
+
+  </head>
+
+
+  <body>
+	
+	<header>
+		<div class="header_div">
+			<div>
+				<p class="logo_part1">Flipkart</p>
+				<p class="logo_part2">Explore <span>Plus+</span></p>
+			</div>
+
+			<div>
+				
+					<input type="text" id="search_box" placeholder="     Search for products, brands and more">
+			
+			</div>
+
+			<div>
+				<button id="login_button">Login</button>
+			</div>
+
+			<div>
+				<button id="more_btn">More</button>
+			</div>
+
+			<div>
+				<button id="cart_btn" onclick="cart.play();><i class="fa fa-shopping-cart"></i> Cart</button>
+			</div>
+		</div>
+		<div class="shopping">
+			<input class="list" type="button" value="Electronics">
+			<input class="list" type="button" value="Tv & Appliances">
+			<input class="list" type="button" value="Men">
+			<input class="list" type="button" value="Women">
+			<input class="list" type="button" value="Baby & Kids">
+			<input class="list" type="button" value="Home & Furniture">
+			<input class="list" type="button" value="Sports,Book & More">
+			<input class="list" type="button" value="Flights">
+			<input class="list" type="button" value="Offer Zone">
+			<input class="list" type="button" value="Grocery">
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/u/r/i/free-1761-vallabh-gold-stitched-						original-imag5y3g29wm6gry.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Embellished Bollywood Lycra Blend Saree  (Yellow)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;3,499</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">7% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/i/8/h/free-1765-vallabh-gold-stitched-						original-imag5y3hsghrhefh.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">SAARA</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Blue)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;2,089</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">45% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/j/m/d/free-1736-vallabh-gold-stitched-						original-imag5y3szbw6tmjt.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">SAARA</p>
+					<p>Embellished Bollywood Lycra Blend Saree  (Purple)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,599</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">57% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/g/x/w/free-1756-vallabh-gold-stitched-						original-imag5y3s74rqhh7a.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Black)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,599</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">58% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/d/i/j/free-1763-vallabh-gold-stitched-						original-imag5y3s6y2r7muy.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Pink)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,599</span> 
+						<span class="real_price">&#x20b9;3,799 </span> 
+						<span class="discount_price">57% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();"s>Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/a/a/v/free-1715-vallabh-gold-stitched-						original-imag5y3pnpxjvuze.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Blue)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,985</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">47% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/v/6/1/free-10101002var-vallabh-gold-						stitched-original-imag5y3ryhdpdgz7.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Dyed Bollywood Lycra Blend Saree  (Orange)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,599</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">57% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/3/u/p/free-1761-vallabh-gold-stitched-						original-imag5y3ezhfdy7uz.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Embellished Bollywood Lycra Blend Saree  (Yellow)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;3,499</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">7% off</span> 
+					</p>
+				</div>
+				<div  class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/g/6/q/free-1736-vallabh-gold-stitched-						original-imag5y3sra3uctep.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Embellished Bollywood Lycra Blend Saree  (Green)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,599</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">57% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+
+			<div id="item">
+				<div class="img_box">
+					<img  class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/d/g/r/free-1765-vallabh-gold-stitched-						original-imag5y3dkbtmy2kh.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Purple)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;2,089</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">45% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+					</div>
+			</div>
+
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/w/e/w/free-1705-vallabh-gold-stitched-						original-imag5y3sxmgsqhgw.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Green)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,443</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">62% off</span> 
+					</p>
+				</div>
+				<div  class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+			
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kka1si80/sari/i/v/e/free-white-flair-aelibeli-						unstitched-original-imafznhpnetcuba9.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">AeliBeli</p>
+					<p>Embroidered Bollywood Georgette Saree  (White)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;1,349</span> 
+						<span class="real_price">&#x20b9;2,299</span> 
+						<span class="discount_price">41% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/880/1056/kr58yvk0/sari/g/y/4/free-1715-vallabh-gold-stitched-						original-imag5y3hzh6jrykm.jpeg?q=50" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">Vallabh Gold</p>
+					<p>Solid Bollywood Lycra Blend Saree  (Red)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;2,089</span> 
+						<span class="real_price">&#x20b9;3,799</span> 
+						<span class="discount_price">45% off</span> 
+					</p>
+				</div>
+				<div class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+	
+			<div id="item">
+				<div class="img_box">
+					<img class="saree_pic" src="https://rukminim1.flixcart.com/image/432/518/klwmufk0/sari/o/d/d/free-gldmrnsreblouse-dream-angel-								fashion-unstitched-original-imagyx5csa7hsvdf.jpeg?q=70" alt="saree" onclick="image(this)">
+				</div>
+				<div class="product_details">
+					<p class="saree_brand_name">VILLAGIUS</p>
+					<p>Solid Fashion Satin Blend, Silk Blend Saree  (Maroon)</p>
+					<img class="assured_img" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png" alt="assured">
+					<p>
+						<span class="current_price">&#x20b9;900</span> 
+						<span class="real_price">&#x20b9;3,663</span> 
+						<span class="discount_price">72% off</span> 
+					</p>
+				</div>
+				<div  class="cart">
+					<button class="addtocart_btn" onclick="audio.play();">Add to Cart</button>
+				</div>
+			</div>
+	
+		</div>
+                         
+	</main>
+
+
+	<footer>
+		
+	</footer>
+  </body>
+</html>
